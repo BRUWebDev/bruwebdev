@@ -9,7 +9,7 @@ body {
 }
 
 .video-background {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .container-video:before {
@@ -24,11 +24,11 @@ body {
 }
 
 .image-logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    margin: auto;
 }
