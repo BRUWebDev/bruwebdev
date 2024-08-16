@@ -1,4 +1,6 @@
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en"
+  xml:lang="en"
+  xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   <title>BRU Web Development</title>
@@ -11,79 +13,99 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/83100d2143.js"
+    crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="color-background">
   <section id="hero">
-    <div class="container-video">
-      <video id="hero_video"
-        autoplay
-        loop
-        muted
-        class="video-background">
-        <source src="./assets/media/hero_background.mp4"
-          type="video/mp4">
-        </source>
-        <source src="./assets/media/hero_background.webm"
-          type="video/webm">
-        </source>
+    <div class="container-video"">
+      <video id="
+      hero_video"
+      autoplay
+      loop
+      muted
+      class="video-background">
+      <source src="./assets/media/hero_background.mp4"
+        type="video/mp4">
+      </source>
+      <source src="./assets/media/hero_background.webm"
+        type="video/webm">
+      </source>
       </video>
     </div>
-    <div>
-      <img src="./assets/media/BRU Logo.png" alt="BRU Web Dev" class="image-logo">
+    <div class="container-logo">
+      <img src="./assets/media/BruLogo-Green.png"
+        alt="BRU Web Dev"
+        class="image-logo">
+      <div class="m-4">
+        <button class="btn btn-outline-primary m-1">Services</button>
+        <button class="btn btn-primary m-1">Contact</button>
+      </div>
     </div>
   </section>
-  <div class="container">
-    <section id="services">
-      <div class="row">
-        <div class="col text-center">
-          <div class="card m-3">
-            <h4 class="card-title m-3">Service 1</h4>
-            <div class="card-body text-start">
-              <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-              </ul>
+  <div class="parallax">
+    <div class="container">
+      <section id="services"
+        class="container-services">
+        <div class="row">
+          <div class="col-md-4 text-center mt-5">
+            <div class="card m-3 card-primary">
+              <p class="shift-up-50">
+                <i class="fa-solid fa-swatchbook fa-2xl p-4 icon-card"></i>
+              </p>
+              <div class="card-body text-center">
+                <h2 class="mb-5">Design</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center mt-5">
+            <div class="card m-3 card-primary">
+              <p class="shift-up-50">
+                <i class="fa-solid fa-code fa-2xl p-4 icon-card"></i>
+              </p>
+              <div class="card-body text-center">
+                <h2 class="mb-5">Development</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center mt-5">
+            <div class="card m-3 card-primary">
+              <p class="shift-up-50">
+                <i class="fa-solid fa-server fa-2xl p-4 icon-card"></i>
+              </p>
+              <div class="card-body text-center">
+                <h2 class="mb-5">Hosting</h2>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col text-center">
-          <div class="card m-3">
-            <h4 class="card-title m-3">Service 2</h4>
-            <div class="card-body text-start">
-              <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-              </ul>
-            </div>
-          </div>
+      </section>
+      <section id="about"
+        class="container-about m-3 p-4">
+        <div>
+          <h3>About</h3>
+          <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Parturient sed iaculis per nec pellentesque senectus
+            parturient molestie facilisi. Varius metus fames cras porttitor habitasse iaculis eleifend. Pretium odio
+            primis ligula porta laoreet odio ante. Arcu per semper conubia montes litora maecenas vehicula. Orci
+            elementum himenaeos malesuada cras mollis. Risus at porttitor accumsan auctor erat maecenas imperdiet
+            integer.</p>
+          <p>Placerat id fringilla imperdiet magna rutrum, ante senectus! Blandit lorem malesuada nam himenaeos cursus
+            orci commodo inceptos. Fermentum lacinia vel commodo sem vitae. Convallis mattis nascetur nascetur fusce
+            vitae facilisi sociosqu volutpat. Himenaeos porttitor nam congue nam in metus nisi vel platea? Pretium
+            hendrerit ornare porta quisque aptent dui fermentum varius. Duis pellentesque mus himenaeos himenaeos mollis
+            non.</p>
         </div>
-        <div class="col text-center">
-          <div class="card m-3">
-            <h4 class="card-title m-3">Service 3</h4>
-            <div class="card-body text-start">
-              <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <h3>About</h3>
-      <p>This is just a bunch of text to see if Google Translate will stop trying to translate from Portuguese.</p>
-    </section>
+      </section>
+    </div>
+    <container id="footer">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-3 container-fluid">
+        <p class="mb-0"><a class="cc-text"
+            href="https://bruwebdev.com"
+            target="_blank">© 2022-2024 BRU Web Development</a></p>
+      </footer>
+    </container>
   </div>
-  <container id="footer">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-3 container-fluid">
-      <p class="mb-0"><a class="cc-text" href="https://bruwebdev.com">© 2022-2024 Bru Web Development</a></p>
-    </footer>
-  </container>
 </body>
 
 </html>

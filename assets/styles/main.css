@@ -1,11 +1,34 @@
 :root {
-  --primary-color: rgb(82, 236, 164);
+  --primary-color: #a6f0c6;
+  --secondary-color: #a98b98;
+  --background-color: #4e3d53;
+  --dark-color: #0f1123;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+}
+
+button.btn.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  border-color: var(--primary-color);
+}
+
+button.btn.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+button.btn.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+}
+
+.color-background {
+  background-color: var(--background-color);
 }
 
 .video-background {
@@ -17,29 +40,75 @@ body {
   top: 0;
   left: 0;
   object-fit: cover;
-  
+  position: fixed;
+}
+
+video {
+  position: fixed;
+  z-index: -999;
 }
 
 .container-video:before {
   content: "";
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
-  /* border-radius: 5px; */
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: -99;
+}
+
+.parallax {
+  background-color: var(--background-color);
+  margin-top: 100vh;
+}
+
+.container-services {
 }
 
 .image-logo {
-  position: absolute;
+  position: relative;
+  height: 40vh;
+  display: block;
+  margin: auto;
+}
+
+.container-logo {
+  position: fixed;
   top: 50%;
   left: 50%;
-  height: 75%;
   transform: translate(-50%, -50%);
+  z-index: -9;
+  width: 50%;
+  text-align: center;
 }
 
 .cc-text {
-  color: #000000;
+  color: var(--primary-color);
   text-decoration: none;
+}
+
+.card.card-primary {
+  background-color: var(--primary-color);
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.icon-card {
+  border-radius: 50%;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.shift-up-50 {
+  transform: translateY(-50%);
+}
+
+.container-about {
+  border: 1px solid var(--secondary-color);
+  border-radius: .375rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
