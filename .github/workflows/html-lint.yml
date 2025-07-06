@@ -1,7 +1,10 @@
 name: HTML Lint
 
 on:
-  push: null
+  push:
+    branches:
+      - main
+      - development
   pull_request:
     branches:
       - main
@@ -10,19 +13,19 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-
     permissions:
-      contents: read # Allow reading repository contents
-      packages: read # Needed if using packages
-      statuses: write # To report individual linter statuses
-      
-    steps:
+      contents: read
+      packages: read
+      statuses: write
 
-      - name: Checkout Code
+    steps:
+      - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Lint
         uses: super-linter/super-linter@v7.4.0
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          # Add more configuration as needed
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BRANCH: main     # set to your repo’s default branch
