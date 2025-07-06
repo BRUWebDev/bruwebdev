@@ -1,0 +1,22 @@
+name: HTML Lint
+
+on:
+  push:
+    branches:
+      - main
+      - development
+  pull_request:
+    branches:
+      - main
+      - development
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: github/super-linter@v6
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_HTML: true
+          # Add more configuration as needed
