@@ -36,7 +36,6 @@ button.btn.btn-outline-primary:hover {
   height: 100vh;
   min-width: 100%;
   display: inline-block;
-  position: relative;
   top: 0;
   left: 0;
   object-fit: cover;
@@ -48,23 +47,17 @@ video {
   z-index: -999;
 }
 
-.container-video:before {
+  /* background: rgba(0, 0, 0, 0.5); */
+.container-video::before {
   content: "";
   position: absolute;
-  /* background: rgba(0, 0, 0, 0.5); */
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0 0;
   z-index: -99;
 }
 
 .parallax {
   background-color: var(--background-color);
   margin-top: 100vh;
-}
-
-.container-services {
 }
 
 .image-logo {
