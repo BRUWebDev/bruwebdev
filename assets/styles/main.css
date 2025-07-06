@@ -47,11 +47,11 @@ video {
   z-index: -999;
 }
 
-  /* background: rgba(0, 0, 0, 0.5); */
+/* background: rgba(0, 0, 0, 0.5); */
 .container-video::before {
   content: "";
   position: absolute;
-  inset: 0 0;
+  inset: 0;
   z-index: -99;
 }
 
@@ -101,7 +101,7 @@ video {
 
 .container-about {
   border: 1px solid var(--secondary-color);
-  border-radius: .375rem;
+  border-radius: 0.375rem;
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
