@@ -1,10 +1,7 @@
 name: HTML Lint
 
 on:
-  push:
-    branches:
-      - main
-      - development
+  push: null
   pull_request:
     branches:
       - main
@@ -14,9 +11,12 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: github/super-linter@v6
+
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Lint
+        uses: super-linter/super-linter@v7.4.0
         env:
-          VALIDATE_ALL_CODEBASE: false
-          VALIDATE_HTML: true
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           # Add more configuration as needed
