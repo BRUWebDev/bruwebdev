@@ -1,4 +1,8 @@
 name: HTML Lint
+permissions:
+  contents: read
+  packages: read
+  statuses: write
 
 on:
   push:
@@ -13,10 +17,6 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: read
-      statuses: write
 
     steps:
       - name: Checkout code
