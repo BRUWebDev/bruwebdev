@@ -10,6 +10,12 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read # Allow reading repository contents
+      packages: read # Needed if using packages
+      statuses: write # To report individual linter statuses
+      
     steps:
 
       - name: Checkout Code
