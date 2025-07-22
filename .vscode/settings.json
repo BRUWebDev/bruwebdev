@@ -6,13 +6,11 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.enable": true,
 
-  // HTML
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
 
-  // CSS
   "css.format.enable": true,
   "css.format.newlineBetweenRules": true,
   "css.format.spaceAroundSelectorSeparator": true,
@@ -23,7 +21,6 @@
     "editor.formatOnSave": true
   },
 
-  // Python
   "pylint.enabled": true,
   "flake8.enabled": true,
   "[python]": {
@@ -34,7 +31,6 @@
   },
   "black-formatter.args": ["--line-length", "100"],
 
-  // Javascript
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
@@ -45,7 +41,6 @@
     }
   },
 
-  // Typescript
   "[typescript]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
@@ -55,7 +50,6 @@
     }
   },
 
-  // JSON
   "[json]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
@@ -63,7 +57,6 @@
     "editor.formatOnSave": true
   },
 
-  // Markdown
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   }
