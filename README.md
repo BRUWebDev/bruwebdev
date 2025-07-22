@@ -1,3 +1,3 @@
-# BRU Web Dev Website
+# BRU Web Dev Site
 
 [bruwebdev.com](https://bruwebdev.com)
