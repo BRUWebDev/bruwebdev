@@ -1,8 +1,8 @@
-""" Generates hero background video """
+"""Generates hero background video"""
 
+import imageio
 import numpy as np
 from PIL import Image, ImageDraw
-import imageio
 
 # Video parameters
 WIDTH, HEIGHT = 1280, 720
