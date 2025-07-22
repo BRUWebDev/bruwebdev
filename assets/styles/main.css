@@ -15,8 +15,7 @@ body {
 
 .text-accent-glow {
   color: var(--primary-color);
-  text-shadow: 1px 1px 15px var(--primary-color);
-  text-shadow: 1px 1px 25px var(--primary-text-color);
+  text-shadow: 0 0 10px var(--primary-color), 0 0 25px var(--primary-text-color);
 }
 
 .video-background {
