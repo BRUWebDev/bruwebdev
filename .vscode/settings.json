@@ -35,9 +35,7 @@
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnType": true
   },
-  "black-formatter.args": [
-    "--line-length", "100"
-  ],
+  "black-formatter.args": ["--line-length", "100"],
 
   // Javascript
   "[javascript]": {
@@ -71,5 +69,5 @@
   // Markdown
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-  },
+  }
 }
