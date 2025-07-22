@@ -1,4 +1,4 @@
-name: HTML Lint
+name: Linting
 permissions:
   contents: read
   packages: read
@@ -15,7 +15,7 @@ on:
       - development
 
 jobs:
-  lint:
+  Lint:
     runs-on: ubuntu-latest
 
     steps:
