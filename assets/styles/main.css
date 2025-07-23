@@ -14,7 +14,7 @@ body {
 }
 
 .text-header {
-  font-family: "Orbitron", sans-serif;
+  font-family: Orbitron, sans-serif;
   color: var(--primary-color);
   text-shadow:
     0 0 10px var(--primary-color),
