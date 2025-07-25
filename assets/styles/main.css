@@ -21,6 +21,10 @@ body {
     0 0 25px var(--primary-text-color);
 }
 
+.text-header.title {
+  margin-bottom: 60px;
+}
+
 .text-accent {
   font-family: "Share Tech Mono", sans-serif;
   color: var(--primary-text-color);
@@ -110,4 +114,47 @@ video {
 
 .list-about > li > b > span > i {
   color: var(--primary-color);
+}
+
+.container-portfolio {
+  padding: 32px;
+  padding-top: 60px;
+  background-color: var(--background-color);
+}
+
+.card.card-portfolio {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-text-color);
+  height: 400px;
+  width: 400px;
+  margin: 16px auto;
+  padding: 16px;
+}
+
+.card-img {
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
+}
+
+.card-overlay {
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  height: calc(100% - 32px);
+  width: calc(100% - 32px);
+  opacity: 0.5;
+  /* transition: .5s ease; */
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-overlay:hover {
+  opacity: 0;
+  cursor: pointer;
 }
