@@ -1,8 +1,8 @@
 function openPortfolioModal(url) {
-  const portfolioModal = new bootstrap.Modal('#modalPortfolio', {
+  const portfolioModal = new bootstrap.Modal('#modal-portfolio', {
     keyboard:false
   });
-  const portfolioPreview = document.getElementById("portfolioPreview");
+  const portfolioPreview = document.getElementById("portfolio-preview");
   portfolioPreview.setAttribute("src", url);
   portfolioModal.show();
 }
