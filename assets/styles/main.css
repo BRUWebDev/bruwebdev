@@ -158,3 +158,9 @@ video {
   opacity: 0;
   cursor: pointer;
 }
+
+.modal-dialog.modal-portfolio {
+  border: 1px solid var(--primary-color);
+  padding: 16px;
+  background-color: var(--background-color);
+}
