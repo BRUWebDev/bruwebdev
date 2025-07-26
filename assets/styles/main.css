@@ -132,21 +132,13 @@ video {
   padding: 16px;
 }
 
-.card-img {
-  /* -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); */
-}
-
 .card-overlay {
   position: absolute;
-  top: 16px;
-  bottom: 16px;
-  left: 16px;
-  right: 16px;
+  inset: 16px;
   height: calc(100% - 32px);
   width: calc(100% - 32px);
   opacity: 0.5;
-  /* transition: .5s ease; */
+  transition: .5s ease;
   background-color: var(--background-color);
   color: var(--primary-color);
   display: flex;
