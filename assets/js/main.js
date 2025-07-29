@@ -1,4 +1,4 @@
-import { Modal } from 'bootstrap';
+import { Modal } from "bootstrap";
 
 /* eslint-disable no-unused-vars */
 function openPortfolioModal(url) {
