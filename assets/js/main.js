@@ -1,6 +1,8 @@
+import { Modal } from 'bootstrap';
+
 /* eslint-disable no-unused-vars */
 function openPortfolioModal(url) {
-  const portfolioModal = new bootstrap.Modal("#modal-portfolio", {
+  const portfolioModal = new Modal("#modal-portfolio", {
     keyboard: false,
   });
   const portfolioPreview = document.getElementById("portfolio-preview");
