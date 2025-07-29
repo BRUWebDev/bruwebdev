@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 function openPortfolioModal(url) {
   const portfolioModal = new bootstrap.Modal("#modal-portfolio", {
     keyboard: false,
