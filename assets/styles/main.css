@@ -102,10 +102,11 @@ video {
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (768px <= width) {
   .img-fluid.image-about {
     max-width: 500px;
   }
+
   .text-align-left {
     text-align: start;
   }
@@ -164,7 +165,7 @@ video {
 
 .modal-dialog.modal-portfolio {
   border: 1px solid var(--primary-color);
-  padding: 0 16px 16px 16px;
+  padding: 0 16px 16px;
   background-color: var(--background-color);
 }
 
