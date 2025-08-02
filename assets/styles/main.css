@@ -33,10 +33,6 @@ body {
     0 0 25px var(--primary-text-color);
 }
 
-.text-header.title {
-  margin-bottom: 60px;
-}
-
 .text-accent {
   font-family: "Share Tech Mono", sans-serif;
   color: var(--primary-text-color);
@@ -48,9 +44,8 @@ body {
 }
 
 .video-background {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  min-width: 100%;
   display: inline-block;
   top: 0;
   left: 0;
@@ -98,14 +93,22 @@ video {
 }
 
 .container-about {
-  padding: 32px;
-  padding-top: 60px;
+  padding: 1.5rem;
 }
 
 .container-image {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .img-fluid.image-about {
+    max-width: 500px;
+  }
+  .text-align-left {
+    text-align: start;
+  }
 }
 
 .list-about {
@@ -121,18 +124,13 @@ video {
   color: var(--primary-color);
 }
 
-.container-portfolio {
-  padding: 60px 32px;
-}
-
 .card.card-portfolio {
   background: transparent;
   border: 2px solid var(--primary-color);
   color: var(--primary-text-color);
-  height: 400px;
-  width: 400px;
   margin: 16px auto;
   padding: 16px;
+  max-width: 400px;
 }
 
 .card-overlay {
@@ -154,13 +152,58 @@ video {
   cursor: pointer;
 }
 
+.modal-header.modal-header-custom {
+  background-color: var(--background-color);
+  border-bottom: none;
+  padding: 16px 8px;
+}
+
+.modal-header-custom > button {
+  border: 2px solid var(--primary-color);
+}
+
 .modal-dialog.modal-portfolio {
   border: 1px solid var(--primary-color);
-  padding: 16px;
+  padding: 0 16px 16px 16px;
   background-color: var(--background-color);
 }
 
+.container-contact {
+  margin: 60px 32px;
+}
+
+.form-control.form-input {
+  background-color: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
+.form-control.form-input:focus {
+  background-color: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
+.form-floating>label {
+  border: none;
+  color: var(--primary-color) !important;
+}
+
+.form-floating>label::after {
+  background-color: transparent !important;
+}
+
+.btn.btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
 .container-footer {
-  padding: 16px;
+  padding: 1.5rem;
   border-top: 2px solid var(--primary-color);
 }
