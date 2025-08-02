@@ -184,12 +184,12 @@ video {
   color: var(--primary-text-color);
 }
 
-.form-floating>label {
+.form-floating > label {
   border: none;
   color: var(--primary-color) !important;
 }
 
-.form-floating>label::after {
+.form-floating > label::after {
   background-color: transparent !important;
 }
 
