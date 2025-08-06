@@ -13,6 +13,18 @@ body {
   padding: 0;
 }
 
+.background-gradient {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary-color),
+    var(--background-color),
+    var(--background-color),
+    var(--background-color),
+    var(--background-color),
+    var(--primary-color)
+  );
+}
+
 .text-header {
   font-family: Orbitron, sans-serif;
   color: var(--primary-color);
@@ -32,9 +44,8 @@ body {
 }
 
 .video-background {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  min-width: 100%;
   display: inline-block;
   top: 0;
   left: 0;
@@ -47,17 +58,11 @@ video {
   z-index: -999;
 }
 
-/* background: rgba(0, 0, 0, 0.5); */
 .container-video::before {
   content: "";
   position: absolute;
   inset: 0;
   z-index: -99;
-}
-
-.parallax {
-  background-color: var(--background-color);
-  margin-top: 100vh;
 }
 
 .image-logo {
@@ -88,15 +93,23 @@ video {
 }
 
 .container-about {
-  padding: 32px;
-  padding-top: 60px;
-  background-color: var(--background-color);
+  padding: 1.5rem;
 }
 
 .container-image {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (768px <= width) {
+  .img-fluid.image-about {
+    max-width: 500px;
+  }
+
+  .text-align-left {
+    text-align: start;
+  }
 }
 
 .list-about {
@@ -110,4 +123,88 @@ video {
 
 .list-about > li > b > span > i {
   color: var(--primary-color);
+}
+
+.card.card-portfolio {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-text-color);
+  margin: 16px auto;
+  padding: 16px;
+  max-width: 400px;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 16px;
+  height: calc(100% - 32px);
+  width: calc(100% - 32px);
+  opacity: 0.5;
+  transition: 0.5s ease;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-overlay:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.modal-header.modal-header-custom {
+  background-color: var(--background-color);
+  border-bottom: none;
+  padding: 16px 8px;
+}
+
+.modal-header-custom > button {
+  border: 2px solid var(--primary-color);
+}
+
+.modal-dialog.modal-portfolio {
+  border: 1px solid var(--primary-color);
+  padding: 0 16px 16px;
+  background-color: var(--background-color);
+}
+
+.container-contact {
+  margin: 60px 32px;
+}
+
+.form-control.form-input {
+  background-color: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
+.form-control.form-input:focus {
+  background-color: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-text-color);
+}
+
+.form-floating > label {
+  border: none;
+  color: var(--primary-color) !important;
+}
+
+.form-floating > label::after {
+  background-color: transparent !important;
+}
+
+.btn.btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.container-footer {
+  padding: 1.5rem;
+  border-top: 2px solid var(--primary-color);
 }

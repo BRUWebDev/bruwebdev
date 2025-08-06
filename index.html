@@ -3,6 +3,7 @@
 <html lang="en">
   <head>
     <title>BRU Web Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/styles/main.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -33,7 +34,7 @@
         <img
           src="./assets/media/logo.svg"
           alt="BRU Web Dev"
-          class="image-logo"
+          class="image-logo img-fluid"
         />
       </div>
     </section>
@@ -46,95 +47,212 @@
       </div>
     </section>
 
-    <section id="about">
-      <div class="container-about text-center">
-        <div class="row">
-          <div class="col container-image">
-            <img
-              src="./assets/media/father_son.png"
-              alt="Image of father and son"
-              height="500px"
-              class="rounded"
-            />
-          </div>
-          <div
-            class="col text-start"
-            style="color: var(--secondary-text-color)"
-          >
-            <h2 class="text-header">About</h2>
-            <br />
-            <h4 class="text-accent">Father & son building the web together</h4>
-            <br />
-            <div>
-              <p>
-                BRU Web Development is a <b>father-and-son</b> business with
-                over
-                <b>50 years of combined tech and software experience.</b> Our
-                experience spans web development projects for small businesses
-                and government agencies, including NASA, NIH, CDC, and several
-                others. We bring a deep understanding of technology,
-                reliability, and customer service to every project. Our goal is
-                to provide a worry-free website experience so you can focus on
-                serving your community without the burden of website management.
-              </p>
-              <p>
-                At BRU Web Development, we provide a fully managed website
-                solution, so you never have to worry about the technical side of
-                things. Our subscription-based model ensures that your website
-                is always up-to-date, secure, and running smoothly.
-              </p>
-              <ul class="list-about">
-                <li>
-                  <b>
-                    <span>
-                      <i class="fa-solid fa-check"></i> Hands-Free
-                      Maintenance</span
-                    ></b
-                  >
-                  - We handle all necessary package updates, software patches,
-                  and performance optimizations.
-                </li>
-                <li>
-                  <b
-                    ><span style="color: var(--primary-text-color)"
-                      ><i class="fa-solid fa-check"></i> Browser
-                      Compatibility</span
-                    ></b
-                  >
-                  - Your website will always be tested and updated to function
-                  seamlessly across all major browsers.
-                </li>
-                <li>
-                  <b
-                    ><span style="color: var(--primary-text-color)"
-                      ><i class="fa-solid fa-check"></i> Security &
-                      Reliability</span
-                    ></b
-                  >
-                  - We proactively monitor for vulnerabilities, apply security
-                  patches, and ensure uptime reliability.
-                </li>
-                <li>
-                  <b
-                    ><span style="color: var(--primary-text-color)"
-                      ><i class="fa-solid fa-check"></i> Scalability &
-                      Future-Proofing</span
-                    ></b
-                  >
-                  - As technology evolves, we make sure your website stays
-                  modern and functional without additional costs.
-                </li>
-              </ul>
+    <div class="background-gradient">
+      <section id="about">
+        <div class="container-about text-center py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6"></div>
+              <div class="col-sm-6 text-align-left">
+                <h2 class="text-header mb-5">About</h2>
+              </div>
+            </div>
+            <div class="row" style="margin: 0 auto">
+              <div class="col-sm-6 container-image mb-4">
+                <img
+                  src="./assets/media/father_son.png"
+                  alt="Image of father and son"
+                  class="rounded img-fluid image-about"
+                />
+              </div>
+              <div class="col-sm-6 text-start text-general">
+                <h4 class="text-accent mb-3">
+                  Father & son building the web together
+                </h4>
+                <div>
+                  <p>
+                    BRU Web Development is a <b>father-and-son</b> business with
+                    over
+                    <b>50 years of combined tech and software experience.</b>
+                    Our experience spans web development projects for small
+                    businesses and government agencies, including NASA, NIH,
+                    CDC, and several others. We bring a deep understanding of
+                    technology, reliability, and customer service to every
+                    project. Our goal is to provide a worry-free website
+                    experience so you can focus on serving your community
+                    without the burden of website management.
+                  </p>
+                  <p>
+                    At BRU Web Development, we provide a fully managed website
+                    solution, so you never have to worry about the technical
+                    side of things. Our subscription-based model ensures that
+                    your website is always up-to-date, secure, and running
+                    smoothly.
+                  </p>
+                  <ul class="list-about">
+                    <li>
+                      <b>
+                        <span>
+                          <i class="fa-solid fa-check"></i>
+                          Hands-Free Maintenance
+                        </span>
+                      </b>
+                      - We handle all necessary package updates, software
+                      patches, and performance optimizations.
+                    </li>
+                    <li>
+                      <b>
+                        <span>
+                          <i class="fa-solid fa-check"></i>
+                          Browser Compatibility
+                        </span>
+                      </b>
+                      - Your website will always be tested and updated to
+                      function seamlessly across all major browsers.
+                    </li>
+                    <li>
+                      <b>
+                        <span>
+                          <i class="fa-solid fa-check"></i>
+                          Security & Reliability
+                        </span>
+                      </b>
+                      - We proactively monitor for vulnerabilities, apply
+                      security patches, and ensure uptime reliability.
+                    </li>
+                    <li>
+                      <b>
+                        <span>
+                          <i class="fa-solid fa-check"></i>
+                          Scalability & Future-Proofing
+                        </span>
+                      </b>
+                      - As technology evolves, we make sure your website stays
+                      modern and functional without additional costs.
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section id="portfolio">
+        <div class="container-portfolio text-center">
+          <div class="container">
+            <h2 class="text-header mb-5">Portfolio</h2>
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div class="card card-portfolio container">
+                  <img
+                    src="./assets/media/pci_website.png"
+                    alt="PCI Website"
+                    class="card-img img-fluid"
+                  />
+                  <div
+                    class="card-overlay"
+                    onclick="openPortfolioModal('https://pciconcerts.com')"
+                  ></div>
+                </div>
+                <h3 class="text-accent">PCI Concerts</h3>
+              </div>
+              <div class="col-md-6">
+                <div class="card card-portfolio">
+                  <img
+                    src="./assets/media/vlg_website.png"
+                    alt="Virtue Law Group Website"
+                    class="card-img img-fluid"
+                  />
+                  <div
+                    class="card-overlay"
+                    onclick="openPortfolioModal('https://virtuelawgroup.com')"
+                  ></div>
+                </div>
+                <h3 class="text-accent">Virtue Law Group</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modal-portfolio" tabindex="-1">
+          <div
+            class="modal-dialog modal-dialog-scrollable modal-xl modal-portfolio rounded"
+          >
+            <div class="modal-content" style="height: 100%; width: 100%">
+              <div class="modal-header modal-header-custom">
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  aria-label="Close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <iframe
+                id="portfolio-preview"
+                src="https://pciconcerts.com"
+                style="height: 100%; width: 100%"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container-contact text-center">
+          <div class="container">
+            <h2 class="text-header mb-5">Contact</h2>
+            <form name="contact" method="POST" netlify>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control form-input"
+                  id="email-input"
+                  name="email"
+                />
+                <label for="email-input" class="form-label">Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control form-input"
+                  id="message-input"
+                  name="message"
+                  style="height: 8em"
+                ></textarea>
+                <label for="message-input" class="form-label">Message</label>
+              </div>
+              <button class="btn btn-outline-primary">
+                Send <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer">
+        <div class="container-footer">
+          <div class="row">
+            <div class="col"></div>
+            <div class="col text-center">
+              <img
+                src="./assets/media/logo.svg"
+                alt="BRU Web Development Logo"
+                class="img-fluid"
+                height="150px"
+                width="150px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- end background gradient -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
