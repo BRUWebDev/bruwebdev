@@ -13,7 +13,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +24,35 @@
   </head>
 
   <body class="text-general">
+    <nav class="side-toolbar">
+      <ul>
+        <li>
+          <a href="#tagline">
+            <i class="fa-solid fa-b"></i>
+            <span class="label">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about">
+            <i class="fa-solid fa-people-group"></i>
+            <span class="label">About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#portfolio">
+            <i class="fa-solid fa-grip"></i>
+            <span class="label">Portfolio</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact">
+            <i class="fa-solid fa-phone"></i>
+            <span class="label">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
     <section id="hero">
       <div class="container-video">
         <video id="hero-video" autoplay loop muted class="video-background">
@@ -202,7 +231,7 @@
         <div class="container-contact text-center">
           <div class="container">
             <h2 class="text-header mb-5">Contact</h2>
-            <form name="contact" method="POST" netlify>
+            <form name="contact" method="POST" netlify data-netlify="true">
               <div class="form-floating mb-3">
                 <input
                   type="email"
